@@ -66,7 +66,7 @@ def showPic(history):
     anim = animation.FuncAnimation(fig, animate, init_func=init, frames=len(history), interval=1000, repeat=True,
                                    blit=True)
     plt.show()
-    # anim.save('perceptron.gif', fps=2, writer='imagemagick')
+    anim.save('perceptron.gif', fps=2, writer='imagemagick')
 
 if __name__ == "__main__":
     print "test Normal Perceptron\n"

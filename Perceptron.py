@@ -154,4 +154,3 @@ class DualPerceptron(BasePerceptron):
         a = self.learnRate * self.n  # a = n*eta
         self.b = np.dot(a, self.y)  # b = a*y
         self.History.append([np.dot(a * self.y, self.x), self.b])  # w = a*y*x
-

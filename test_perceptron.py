@@ -19,7 +19,7 @@ from Perceptron import DualPerceptron
 
 
 def showPic(history):
-
+    global line, label
     fig = plt.figure()
     ax = plt.axes(xlim=(0, 2), ylim=(-2, 2))
     line, = ax.plot([], [], 'g', lw=2)
@@ -46,6 +46,7 @@ def showPic(history):
 
 
     def animate(i):
+        global history, ax, line, label
 
         w = history[i][0]
         b = history[i][1]
@@ -66,7 +67,7 @@ def showPic(history):
     anim = animation.FuncAnimation(fig, animate, init_func=init, frames=len(history), interval=1000, repeat=True,
                                    blit=True)
     plt.show()
-    anim.save('perceptron.gif', fps=2, writer='imagemagick')
+    # anim.save('perceptron.gif', fps=2, writer='imagemagick')
 
 if __name__ == "__main__":
     print "test Normal Perceptron\n"
@@ -75,7 +76,7 @@ if __name__ == "__main__":
     w,b,history=per1.train(training_set)
     showPic(history)
     print "test DualPerceptron\n"
-    training_set = np.array(([[[3, 3], 1], [[4, 3], 1], [[1, 1], -1]]))
+    training_set = np.array(([[[3, 3], 1], [[4, 3], 1], [[1, 1], -1],[[3,4],-1]]))
     per2 = DualPerceptron(1.0)
     w2,b2,history2 = per2.train(training_set)
     showPic(history2)

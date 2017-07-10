@@ -31,7 +31,6 @@ def animate(i):                             # i 表示当前帧数
     line.set_data(x, y)
     return line,
 
-
 # call the animator.  blit=true means only re-draw the parts that have changed.
 anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=20, blit=True)

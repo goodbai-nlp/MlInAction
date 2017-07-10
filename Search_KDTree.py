@@ -20,12 +20,10 @@ class node:
         self.point = point
         self.parent = None
         pass
-
     def set_left(self, left):
         if left == None: pass
         left.parent = self
         self.left = left
-
     def set_right(self, right):
         if right == None: pass
         right.parent = self

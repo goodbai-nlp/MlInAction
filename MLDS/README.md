@@ -5,7 +5,7 @@
 Code for NTU professor Hung-yi Lee's course [Machine Learning and having it deep and structured](http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html)
 ## Contains
 
-All the code from hw0 - hw4 except final project.
+All the code from hw0 - hw4
 
 - [_] [hw0](https://inclass.kaggle.com/c/hw0-mnist) 0.99100
 
@@ -19,5 +19,5 @@ All the code from hw0 - hw4 except final project.
 
 ## Environment
 
-`Python 3.5.2` 
+`Python 3.6.0` 
 `tensorflow 1.2.1`

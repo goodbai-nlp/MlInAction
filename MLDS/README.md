@@ -7,7 +7,7 @@ Code for NTU professor Hung-yi Lee's course [Machine Learning and having it deep
 
 All the code from hw0 - hw4
 
-- [_] [hw0](https://inclass.kaggle.com/c/hw0-mnist)
+- [x] [hw0](https://inclass.kaggle.com/c/hw0-mnist)
 
 - [ ] [hw1](https://inclass.kaggle.com/c/hw1-language-model)
 
